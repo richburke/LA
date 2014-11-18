@@ -19,6 +19,8 @@ $LA.vector(4, -1);
 -> [-1, -1, -1, -1]
 ```
 
+[Check out the functionality available for vectors.](#vector-methods)
+
 ####Matrices
 Creating a matrix is similar to creating a vector, but you supply it a two-dimensional array.
 
@@ -34,3 +36,9 @@ $LA.matrix(3, 3, 7);
    [7, 7, 7],
    [7, 7, 7]]
 ```
+
+[Check out the functionality available for matrices.](#vector-methods)
+
+####Vector methods <a id="vector-methods"></a>
+
+####Matrix methods <a id="matrix-methods"></a>
