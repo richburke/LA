@@ -1,0 +1,31 @@
+{
+  "name": "la",
+  "version": "0.5.0",
+  "description": "A linear algebra library implemented in JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/richburke/la.git"
+  },
+  "keywords": [
+    "linear",
+    "algebra",
+    "vector",
+    "matrix"
+  ],
+  "author": "Rich Burke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/richburke/la/issues"
+  },
+  "devDependencies": {
+    "gulp": "~3.8.10",
+    "gulp-rename": "~1.2.0",
+    "gulp-concat": "~2.4.1",
+    "gulp-uglify": "~1.0.1",
+    "gulp-jshint": "~1.9.0"
+  }
+}
