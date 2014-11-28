@@ -24,15 +24,11 @@ Operations involving a vector--for example, scaling the vector--return a new vec
 
 ####Vector methods
 
-[vector.toString()](#vector.toString)
-
-[vector.getTolerance()](#vector.getTolerance)
-
-[vector.setTolerance()](#vector.setTolerance)
-
-[vector.get()](#vector.get)
-
-[vector.make()](#vector.make)
+* [vector.toString()](#vector.toString)
+* [vector.getTolerance()](#vector.getTolerance)
+* [vector.setTolerance()](#vector.setTolerance)
+* [vector.get()](#vector.get)
+* [vector.make()](#vector.make)
 
 ```
 toString()
