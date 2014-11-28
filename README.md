@@ -26,7 +26,7 @@ Operations involving a vector--for example, scaling the vector--return a new vec
 ```JavaScript
 toString()
 ```
-    Returns a string representation of the vector.
+Returns a string representation of the vector.
 
 ```JavaScript
 getTolerance()
@@ -137,13 +137,13 @@ $LA.matrix(3, 3, 7);
 
 Operations involving a matrix--for example, multiplying by a vector--return a new matrix and do not affect the original.
 
----
+***
 
 ####Matrix methods
 ```JavaScript
 toString
 ```
-    Returns a string representation of the matrix.
+Returns a string representation of the matrix.
 
 ```JavaScript
 getTolerance
