@@ -33,55 +33,65 @@ Operations involving a vector--for example, scaling the vector--return a new vec
 * [vector.dimension()](#vector.dimension)
 * [vector.magnitude()](#vector.magnitude)
 
+<a id="vector.toString"></a>
 ```
 toString()
 ```
-<a id="vector.toString"></a>Returns a string representation of the vector.
+Returns a string representation of the vector.
 
+<a id="vector.getTolerance"></a>
 ```
 getTolerance()
 ```
-<a id="vector.getTolerance"></a>Get the current tolerance threshold for operations involving the vector.  The threshold is 0.0001 by default.
+Get the current tolerance threshold for operations involving the vector.  The threshold is 0.0001 by default.
 
+<a id="vector.setTolerance"></a>
 ```
 setTolerance(tolerance)
 ```
-<a id="vector.setTolerance"></a>Set the tolerance threshold for operations on the vector.  The method takes 1 parameter, the desired threshold as a float value.
+Set the tolerance threshold for operations on the vector.  The method takes 1 parameter, the desired threshold as a float value.
 
+<a id="vector.get"></a>
 ```
 get(index [optional])
 ```
-<a id="vector.get"></a>Get the value at the specified point in the vector.  (Note: the index is 1-indexed.)  If no parameter is supplied, the method returns the entire vector as a JavaScript array.  
+Get the value at the specified point in the vector.  (Note: the index is 1-indexed.)  If no parameter is supplied, the method returns the entire vector as a JavaScript array.  
 
+<a id="vector.make"></a>
 ```
 make(magnitude, array_of_radians)
 ```
-<a id="vector.make"></a>Create a vector object of the specified magnitude and with order and values determined by the supplied array of radians. 
+Create a vector object of the specified magnitude and with order and values determined by the supplied array of radians. 
 
+<a id="vector.order"></a>
 ```
 order()
 ```
-<a id="vector.order"></a>Get the number of items contained in the vector.  Synonymous with dimension().
+Get the number of items contained in the vector.  Synonymous with dimension().
 
+<a id="vector.dimension"></a>
 ```
 dimension()
 ```
-<a id="vector.dimension"></a>Get the number of items contained in the vector.  Synonymous with order().
+Get the number of items contained in the vector.  Synonymous with order().
 
+<a id="vector.magnitude"></a>
 ```
 magnitude()
 ```
-<a id="vector.magnitude"></a>Determine the magnitude, or "length", of a vector.  Synonymous with length().
+Determine the magnitude, or "length", of a vector.  Synonymous with length().
 
+<a id="vector.length"></a>
 ```
 length()
 ```
-<a id="vector.length"></a>Determine the magnitude, or "length", of a vector.  Synonymous with magnitude().
+Determine the magnitude, or "length", of a vector.  Synonymous with magnitude().
 
+<a id="vector.distance"></a>
 ```
 distance(vector)
 ```
-<a id="vector.distance"></a>Find the distance between 2 vectors.
+Find the distance between 2 vectors.
 
 ```
 normalize()
