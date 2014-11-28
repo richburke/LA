@@ -32,6 +32,8 @@ Operations involving a vector--for example, scaling the vector--return a new vec
 * [vector.order()](#vector.order)
 * [vector.dimension()](#vector.dimension)
 * [vector.magnitude()](#vector.magnitude)
+* [vector.length()](#vector.length)
+* [vector.length()](#vector.length)
 
 <a id="vector.toString"></a>
 ```
@@ -93,11 +95,13 @@ distance(vector)
 ```
 Find the distance between 2 vectors.
 
+<a id="vector.normalize"></a>
 ```
 normalize()
 ```
 Create a vector object that's a unit vector of the original.
 
+<a id="vector.reverse"></a>
 ```
 reverse()
 ```
