@@ -29,6 +29,9 @@ Operations involving a vector--for example, scaling the vector--return a new vec
 * [vector.setTolerance()](#vector.setTolerance)
 * [vector.get()](#vector.get)
 * [vector.make()](#vector.make)
+* [vector.order()](#vector.order)
+* [vector.dimension()](#vector.dimension)
+* [vector.magnitude()](#vector.magnitude)
 
 ```
 toString()
@@ -38,47 +41,47 @@ toString()
 ```
 getTolerance()
 ```
-Get the current tolerance threshold for operations involving the vector.  The threshold is 0.0001 by default.
+<a id="vector.getTolerance"></a>Get the current tolerance threshold for operations involving the vector.  The threshold is 0.0001 by default.
 
 ```
 setTolerance(tolerance)
 ```
-Set the tolerance threshold for operations on the vector.  The method takes 1 parameter, the desired threshold as a float value.
+<a id="vector.setTolerance"></a>Set the tolerance threshold for operations on the vector.  The method takes 1 parameter, the desired threshold as a float value.
 
 ```
 get(index [optional])
 ```
-Get the value at the specified point in the vector.  (Note: the index is 1-indexed.)  If no parameter is supplied, the method returns the entire vector as a JavaScript array.  
+<a id="vector.get"></a>Get the value at the specified point in the vector.  (Note: the index is 1-indexed.)  If no parameter is supplied, the method returns the entire vector as a JavaScript array.  
 
 ```
 make(magnitude, array_of_radians)
 ```
-Create a vector object of the specified magnitude and with order and values determined by the supplied array of radians. 
+<a id="vector.make"></a>Create a vector object of the specified magnitude and with order and values determined by the supplied array of radians. 
 
 ```
 order()
 ```
-Get the number of items contained in the vector.  Synonymous with dimension().
+<a id="vector.order"></a>Get the number of items contained in the vector.  Synonymous with dimension().
 
 ```
 dimension()
 ```
-Get the number of items contained in the vector.  Synonymous with order().
+<a id="vector.dimension"></a>Get the number of items contained in the vector.  Synonymous with order().
 
 ```
 magnitude()
 ```
-Determine the magnitude, or "length", of a vector.  Synonymous with length().
+<a id="vector.magnitude"></a>Determine the magnitude, or "length", of a vector.  Synonymous with length().
 
 ```
 length()
 ```
-Determine the magnitude, or "length", of a vector.  Synonymous with magnitude().
+<a id="vector.length"></a>Determine the magnitude, or "length", of a vector.  Synonymous with magnitude().
 
 ```
 distance(vector)
 ```
-Find the distance between 2 vectors.
+<a id="vector.distance"></a>Find the distance between 2 vectors.
 
 ```
 normalize()
@@ -88,47 +91,47 @@ Create a vector object that's a unit vector of the original.
 ```
 reverse()
 ```
-Create a vector object with the signs of its values flipped from the original.
+<a id="vector.reverse"></a>Create a vector object with the signs of its values flipped from the original.
 
 ```
 add(vector)
 ```
-Add a vector to the original, returning a new vector object.
+<a id="vector.add"></a>Add a vector to the original, returning a new vector object.
 
 ```
 subtract(vector)
 ```
-Subtract a vector from the original, returning a new vector object.
+<a id="vector.subtract"></a>Subtract a vector from the original, returning a new vector object.
 
 ```
 scale(scalar)
 ```
-Multiply the vector by a scalar value, returning a new vector object.  Synonymous with scalarMultiply().
+<a id="vector.scale"></a>Multiply the vector by a scalar value, returning a new vector object.  Synonymous with scalarMultiply().
 
 ```
 scalarMultiply(scalar)
 ```
-Multiply the vector by a scalar value, returning a new vector object.  Synonymous with scale().
+<a id="vector.scalarMultiply"></a>Multiply the vector by a scalar value, returning a new vector object.  Synonymous with scale().
 
 ```
 scalarDivide(scalar)
 ```
-Divide the vector by a scalar value, returning a new vector object.
+<a id="vector.scalarDivide"></a>Divide the vector by a scalar value, returning a new vector object.
 
 ```
 dot()
 ```
-Take the dot product of the vector.
+<a id="vector.dot"></a>Take the dot product of the vector.
 
 ```
 cross()
 ```
-Multiply 2 vectors by cross product.  Both vectors must be of 3 dimensions.
+<a id="vector.cross"></a>Multiply 2 vectors by cross product.  Both vectors must be of 3 dimensions.
 
 ```
 transform(function)
 ```
-Perform an operation, supplied as a function, upon the values of the vector.
+<a id="vector.transform"></a>Perform an operation, supplied as a function, upon the values of the vector.
 
 ***
 
