@@ -89,14 +89,19 @@ add(vector)
 Add a vector to the original, returning a new vector object.
 
 ```JavaScript
-divide(vector)
+subtract(vector)
 ```
 Subtract a vector from the original, returning a new vector object.
 
 ```JavaScript
+scale(scalar)
+```
+Multiply the vector by a scalar value, returning a new vector object.  Synonymous with scalarMultiply().
+
+```JavaScript
 scalarMultiply(scalar)
 ```
-Multiply the vector by a scalar value, returning a new vector object.
+Multiply the vector by a scalar value, returning a new vector object.  Synonymous with scale().
 
 ```JavaScript
 scalarDivide(scalar)
@@ -139,17 +144,7 @@ $LA.matrix(3, 3, 7);
 Operations involving a matrix--for example, multiplying by a vector--return a new matrix and do not affect the original.
 
 ####Matrix methods
-```JavaScript
-toString
 ```
-Returns a string representation of the matrix.
-
-```JavaScript
-getTolerance
-```
-Returns the current tolerance threshold for operations involving the vector.  The threshold is 0.0001 by default.
-
-```JavaScript
 toString()
 ```
 Returns a string representation of the vector.
@@ -170,91 +165,61 @@ get(row [optional], column [optional])
 Get the value at the specified point in the matrix.  (Note: row and column indices are 1-indexed.)  If neither a row parameter or column parameter is supplied, return the JavaScript arrays of the matrix.  If no row parameter is supplied but a column parameter is supplied, an array containing each of the values of that column is returned.  If no column parameter is supplied but a row parameter is supplied, an array containing each of the values of that row is returned.
 
 ```JavaScript
-make(magnitude, array_of_radians)
+numberOfRows()
 ```
-Create a vector object of the specified magnitude and with order and values determined by the supplied array of radians. 
+Get the number of rows in the matrix.
 
 ```JavaScript
-order()
+numberOfColumns()
 ```
-Get the number of items contained in the vector.  Synonymous with dimension().
+Get the number of columns in the matrix.
 
 ```JavaScript
-dimension()
+asRowVectors()
 ```
-Get the number of items contained in the vector.  Synonymous with order().
+Represent the matrix as an array of vectors, each of which represents a row.
 
 ```JavaScript
-magnitude()
+asColumnVectors()
 ```
-Determine the magnitude, or "length", of a vector.  Synonymous with length().
-
-```JavaScript
-length()
-```
-Determine the magnitude, or "length", of a vector.  Synonymous with magnitude().
-
-```JavaScript
-distance(vector)
-```
-Find the distance between 2 vectors.
-
-```JavaScript
-normalize()
-```
-Create a vector object that's a unit vector of the original.
-
-```JavaScript
-reverse()
-```
-Create a vector object with the signs of its values flipped from the original.
-
-```JavaScript
-add(vector)
-```
-Add a vector to the original, returning a new vector object.
-
-```JavaScript
-divide(vector)
-```
-Subtract a vector from the original, returning a new vector object.
-
-```JavaScript
-scalarMultiply(scalar)
-```
-Multiply the vector by a scalar value, returning a new vector object.
-
-```JavaScript
-scalarDivide(scalar)
-```
-Divide the vector by a scalar value, returning a new vector object.
-
-```JavaScript
-dot()
-```
-Take the dot product of the vector.
-
-```JavaScript
-cross()
-```
-Multiply 2 vectors by cross product.  Both vectors must be of 3 dimensions.
+Represent the matrix as an array of vectors, each of which represents a column.
 
 ```JavaScript
 transform(function)
 ```
-Perform an operation, supplied as a function, upon the values of the vector.
+Perform an operation, supplied as a function, upon the values of the matrix.
 
+```JavaScript
+add(matrix)
+```
+Add a matrix to the original, returning a new matrix object.
 
-get
-numberOfRows
-numberOfColumns
-asColumnVectors
-asRowVectors
-transpose
-add
-subtract
-scale
-scalarMultiply
-scalarDivide
-vectorMultiply
-matrixMultiply
+```JavaScript
+subtract(matrix)
+```
+Subtract a matrix from the original, returning a new matrix object.
+
+```JavaScript
+scale(scalar)
+```
+Multiply the matrix by a scalar value, returning a new matrix object.  Synonymous with scalarMultiply().
+
+```JavaScript
+scalarMultiply(scalar)
+```
+Multiply the matrix by a scalar value, returning a new matrix object.  Synonymous with scale().
+
+```JavaScript
+scalarDivide(scalar)
+```
+Divide the matrix by a scalar value, returning a new matrix object.
+
+```JavaScript
+vectorMultiply(vector)
+```
+Multiply the matrix by a vector, returning a new matrix object.
+
+```JavaScript
+matrixMultiply(matrix)
+```
+Multiply the matrix by another matrix, returning a new matrix object.
