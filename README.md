@@ -118,6 +118,7 @@ transform(function)
 ```
 Perform an operation, supplied as a function, upon the values of the vector.
 
+***
 
 ###Matrices<a id="matrices"></a>
 Creating a matrix is similar to creating a vector, but you supply it a two-dimensional array.
@@ -137,8 +138,6 @@ $LA.matrix(3, 3, 7);
 
 Operations involving a matrix--for example, multiplying by a vector--return a new matrix and do not affect the original.
 
-***
-
 ####Matrix methods
 ```JavaScript
 toString
@@ -150,7 +149,102 @@ getTolerance
 ```
 Returns the current tolerance threshold for operations involving the vector.  The threshold is 0.0001 by default.
 
-setTolerance
+```JavaScript
+toString()
+```
+Returns a string representation of the vector.
+
+```JavaScript
+getTolerance()
+```
+Get the current tolerance threshold for operations involving the vector.  The threshold is 0.0001 by default.
+
+```JavaScript
+setTolerance(tolerance)
+```
+Set the tolerance threshold for operations on the vector.  The method takes 1 parameter, the desired threshold as a float value.
+
+```JavaScript
+get(row [optional], column [optional])
+```
+Get the value at the specified point in the matrix.  (Note: row and column indices are 1-indexed.)  If neither a row parameter or column parameter is supplied, return the JavaScript arrays of the matrix.  If no row parameter is supplied but a column parameter is supplied, an array containing each of the values of that column is returned.  If no column parameter is supplied but a row parameter is supplied, an array containing each of the values of that row is returned.
+
+```JavaScript
+make(magnitude, array_of_radians)
+```
+Create a vector object of the specified magnitude and with order and values determined by the supplied array of radians. 
+
+```JavaScript
+order()
+```
+Get the number of items contained in the vector.  Synonymous with dimension().
+
+```JavaScript
+dimension()
+```
+Get the number of items contained in the vector.  Synonymous with order().
+
+```JavaScript
+magnitude()
+```
+Determine the magnitude, or "length", of a vector.  Synonymous with length().
+
+```JavaScript
+length()
+```
+Determine the magnitude, or "length", of a vector.  Synonymous with magnitude().
+
+```JavaScript
+distance(vector)
+```
+Find the distance between 2 vectors.
+
+```JavaScript
+normalize()
+```
+Create a vector object that's a unit vector of the original.
+
+```JavaScript
+reverse()
+```
+Create a vector object with the signs of its values flipped from the original.
+
+```JavaScript
+add(vector)
+```
+Add a vector to the original, returning a new vector object.
+
+```JavaScript
+divide(vector)
+```
+Subtract a vector from the original, returning a new vector object.
+
+```JavaScript
+scalarMultiply(scalar)
+```
+Multiply the vector by a scalar value, returning a new vector object.
+
+```JavaScript
+scalarDivide(scalar)
+```
+Divide the vector by a scalar value, returning a new vector object.
+
+```JavaScript
+dot()
+```
+Take the dot product of the vector.
+
+```JavaScript
+cross()
+```
+Multiply 2 vectors by cross product.  Both vectors must be of 3 dimensions.
+
+```JavaScript
+transform(function)
+```
+Perform an operation, supplied as a function, upon the values of the vector.
+
+
 get
 numberOfRows
 numberOfColumns
