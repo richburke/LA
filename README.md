@@ -23,8 +23,10 @@ $LA.vector(4, -1);
 Operations involving a vector--for example, scaling the vector--return a new vector and do not affect the original.
 
 ####Vector methods
+
+[vector.toString()](#vector.toString)
 ```
-toString()
+toString()<a id="vector.toString"></a>
 ```
 Returns a string representation of the vector.
 
